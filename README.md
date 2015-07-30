@@ -1,0 +1,1 @@
+# SmartReceipt Marketing Site - [receipt.com](http://www.receipt.com)
