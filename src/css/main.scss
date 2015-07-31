@@ -1,5 +1,6 @@
 @import 'vendors/normalize.scss';
 @import 'includes/variables.scss';
+@import 'includes/header.scss';
 
 html { 
   background: url(../images/bg.jpg) no-repeat center center fixed; 
@@ -16,101 +17,6 @@ body {
 	height: 100%;
 	background: none;
 }
-
-// HEADER/NAVIGATION - Primarily Bootstrap Modifications
-
-// Desktop Nav Changes
-
-@media (min-width: 768px) {
-	.navbar {
-	    border-radius: 0px;
-	    padding: 15px 0px;
-	}
-	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-		margin-left: 0px;
-	}
-	.menu-button {
-		margin-top: 5px;
-		padding-top: 7.5px !important;
-		padding-bottom: 7.5px !important;
-		padding-left: 25px !important;
-		padding-right: 25px !important;
-		border: 1px solid $green !important;
-		background: $green !important;
-		color: $black !important;
-		border-radius: 20px;
-		transition: all 0.25s ease;
-	}
-	.menu-button:hover {
-		border: 1px solid $darkGreen !important;
-		background: $darkGreen !important;
-		color: $white !important;
-	}
-}
-
-.navbar-brand {
-	img {
-		max-width: 300px;
-	}
-}
-
-.navbar-default {
-	background: none;
-	border: none;
-	border-bottom: 2px solid $whiteLight;
-}
-
-.navbar {
-	margin-bottom: 0px;
-}
-
-.navbar-default .navbar-nav>li, .navbar-default .navbar-nav>li>a {
-	color: $green;
-	font-size: 18px;
-}
-
-.navbar-default .navbar-nav>li>a:hover {
-	color: $green;
-}
-
-// Mobile Nav Changes
-
-.navbar-default .navbar-toggle {
-	border: none;
-
-	&:hover {
-		background: none !important;
-	}
-	
-	.icon-bar {
-		background-color: $green;
-	}
-
-}
-
-.nav {
-	text-align: center;
-}
-
-.navbar-default .navbar-collapse {
-	border: none;
-	border-top: 2px solid $whiteLight;
-	background: $blackLight;
-	font-weight: bold;
-
-	.navbar-nav>li>a {
-		color: $whiteLight;
-	
-		&:hover {
-			color: $green;
-		}
-
-	}
-
-}
-
-
-
 
 
 
