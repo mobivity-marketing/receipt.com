@@ -1,5 +1,4 @@
 @import 'vendors/normalize.scss';
-@import 'vendors/skeleton.css';
 @import 'includes/variables.scss';
 
 html { 
@@ -8,15 +7,78 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
 }
 
 body {
 	width: 100%;
 	height: 100%;
+	background: none;
 }
 
-header {
-	width: 100%;
-	padding: 40px 0px;
-	border-bottom: 3px solid $whiteLight;
+// HEADER/NAVIGATION - Primarily Bootstrap Modifications
+
+@media (min-width: 768px) {
+	.navbar {
+	    border-radius: 0px;
+	    padding: 15px 0px;
+	}
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+		margin-left: 0px;
+	}
+	.menu-button {
+		padding-left: 25px !important;
+		padding-right: 25px !important;
+		border: 1px solid $green !important;
+		background: $green !important;
+		color: $black !important;
+		border-radius: 10px;
+		transition: all 0.15s ease;
+	}
+	.menu-button:hover {
+		border: 1px solid $darkGreen !important;
+		background: $darkGreen !important;
+		color: $white !important;
+	}
+	// }
+	// // Sign In Button in Header for Desktop Only
+	// .signin {
+	// 	padding: 5px 15px !important;
+	// 	border: 1px solid $green;
+	// 	border-radius: 10px;
+	// 	background: $green;
+	// 	color: #1a1613;
+	// 	transition: all 0.25s ease;
+	// }
+	// .signin:hover {
+	// 	border: 1px solid $darkGreen;
+	// 	background: $darkGreen;
+	// 	color: $white;
+	// }
+}
+
+.navbar-brand {
+	img {
+		max-width: 300px;
+	}
+}
+
+.navbar-default {
+	background: none;
+	border: none;
+	border-bottom: 2px solid $whiteLight;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav>li, .navbar-default .navbar-nav>li>a {
+	color: $green;
+	font-size: 18px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: $green;
 }
