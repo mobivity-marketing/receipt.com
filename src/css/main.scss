@@ -1,8 +1,11 @@
 @import 'vendors/normalize.scss';
 @import 'includes/variables.scss';
 @import 'includes/header.scss';
+@import 'includes/footer.scss';
 
 html { 
+	position: relative;
+	min-height: 100%;
   background: url(../images/bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
