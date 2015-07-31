@@ -8,7 +8,7 @@
 
 ## Built With:
 
-* Grunt (Thanks to [Matt Bailey](http://mattbailey.io/a-beginners-guide-to-grunt-redux/) for the Grunt template).
+* [Grunt](http://gruntjs.com/) (Thanks to [Matt Bailey](http://mattbailey.io/a-beginners-guide-to-grunt-redux/) for the Grunt template).
 * [Sass](http://sass-lang.com/)
 * [Bootstrap v3.3.5](http://getbootstrap.com/)
 
