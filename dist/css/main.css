@@ -332,8 +332,8 @@ td, th {
     border: 1px solid #8dc63f !important;
     background: #8dc63f !important;
     color: #231f20 !important;
-    border-radius: 20px;
-    transition: all 0.25s ease; }
+    border-radius: 35px;
+    transition: all 0.35s ease; }
   .menu-button:hover {
     border: 1px solid #70AB20 !important;
     background: #70AB20 !important;
