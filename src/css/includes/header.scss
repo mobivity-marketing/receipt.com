@@ -96,6 +96,27 @@
 
 	}
 
+}
 
+// 768PX Fix
+@media (min-width: 768px) and (max-width: 768px) {
+	.navbar-default .navbar-collapse {
+		border-top: none;
+		background: none;
+		font-weight: normal;
+	}
+	.navbar-default .navbar-collapse .navbar-nav > li > a {
+		color: $green;
+	}
+}
 
+// iPhone4 Fixes
+
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+
+	.navbar-brand {
+		img {
+			max-width: 230px;
+		}
+	}
 }
