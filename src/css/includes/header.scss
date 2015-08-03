@@ -36,6 +36,7 @@
 .navbar-brand {
 	img {
 		max-width: 300px;
+		padding: 0px 1px;
 	}
 }
 
@@ -81,11 +82,11 @@
 	.navbar-default .navbar-collapse {
 		border: none;
 		border-top: 2px solid $whiteLight;
-		background: $blackLight;
+		background: rgba(0, 0, 0, 0.50);
 		font-weight: bold;
 
 		.navbar-nav>li>a {
-			color: $whiteLight;
+			color: $grey;
 		
 			&:hover {
 				color: $green;
