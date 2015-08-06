@@ -36,7 +36,6 @@ body {
 		margin: 35px auto;
 		padding: 0;
 		font-weight: bold;
-		// text-transform: uppercase;
 		color: $white;
 	}
 
@@ -75,7 +74,38 @@ body {
 
 	}
 
-	@media (min-device-width : 768px) {
+	@media (min-width : 320px) and (max-width : 480px) {
+
+		h1 {
+			margin-top: 0;
+			font-size: 1.5em;
+		}
+
+		p {
+			font-size: 1em;
+		}
+
+		.button {
+			font-size: 1em;
+			width: 100px;
+		}
+
+		.buttons {
+			div {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	@media (min-width : 481px) and (max-width: 767px) {
+		.buttons {
+			div {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	@media (min-width : 768px) {
 		padding-top: 105px;
 
 		.body-logo {
@@ -94,16 +124,11 @@ body {
 			font-size: 2em;
 			width: 210px;
 		}
-	}
 
-	@media (min-device-width : 320px) and (max-device-width : 480px) {
-		h1 {
-			margin-top: 0;
-		}
-
-		.button {
-			font-size: 1em;
-			width: 100px;
+		.buttons {
+			div {
+				margin-bottom: 20px;
+			}
 		}
 	}
 
