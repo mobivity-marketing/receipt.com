@@ -1,10 +1,11 @@
-# [SmartReceipt](http://www.receipt.com)
+# [SmartReceipt Marketing Site](http://www.receipt.com)
 
 ## To Work in This Project:
 
-* Run `npm install` to install Grunt and all other dependencies.
+* If you don't already have [Grunt](http://www.gruntjs.com) installed globally, run `npm install -g grunt-cli` in the terminal.
+* In the terminal, navigate (`cd`) into the project directory, and run `npm install` to install dependencies.
+* Run `grunt watch` to preview while working (open `index.html` in your browser), and `grunt` to compile all code when you're finished.
 * Make any SCSS/JS changes within the `src` directory, and edit pages within the main directory.
-* Run `grunt watch` to preview while working (open index.html in your browser), and `grunt` to compile all code when you're finished.
 
 ## Built With:
 
