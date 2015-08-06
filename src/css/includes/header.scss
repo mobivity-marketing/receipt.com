@@ -64,9 +64,10 @@
 @media (max-width: 768px) {
 	.navbar-default .navbar-toggle {
 		border: none;
+		background: transparent !important;
 
 		&:hover {
-			background: none !important;
+			background: transparent !important;
 		}
 		
 		.icon-bar {
@@ -96,6 +97,11 @@
 
 	}
 
+}
+
+.navbar-inverse .navbar-inner {
+background-image: none;
+background-color: none;
 }
 
 // 768PX Fix
