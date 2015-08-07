@@ -99,9 +99,66 @@
 
 }
 
+// Fixes BG Color for Menu Icon
+
 .navbar-inverse .navbar-inner {
 background-image: none;
 background-color: none;
+}
+
+// Animates Menu Icon on Open/Close
+
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+
+  &:hover {
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    width: 22px;
+    transition: all 0.35s;
+  }
+
+  .top-bar {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 10% 10%;
+    -ms-transform-origin: 10% 10%;
+    transform-origin: 10% 10%;
+  }
+
+  .middle-bar {
+    opacity: 0;
+  }
+
+  .bottom-bar {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 10% 90%;
+    -ms-transform-origin: 10% 90%;
+    transform-origin: 10% 90%;
+  }
+
+}
+
+.navbar-toggle.collapsed {
+  .top-bar {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  .middle-bar {
+    opacity: 1;
+  }
+  .bottom-bar {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
 }
 
 // 768PX Fix
