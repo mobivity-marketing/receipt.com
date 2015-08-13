@@ -44,10 +44,11 @@ body {
 
 	}
 
-	p {
+	h2 {
 		color: $grey;
-		font-size: 1.25em;
+		font-size: 2.75em;
 		padding: 0;
+		font-weight: 200;
 	}
 
 	.buttons {
@@ -111,7 +112,7 @@ body {
 	}
 
 	@media (min-width : 768px) {
-		padding-top: 140px;
+		padding-top: 120px;
 
 		.body-logo {
 			display: block;
